@@ -1,0 +1,26 @@
+body{
+  background: #454545;
+}
+
+.carousel{
+  width: 100%;
+}
+
+.carousel h5{
+  font-size: 40px;
+}
+
+.carousel p{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 575px){
+
+  nav{
+      height: 100%;
+  }
+  
+  .header{
+      height: auto;
+  }
+}

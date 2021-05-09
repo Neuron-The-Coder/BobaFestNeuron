@@ -1,0 +1,303 @@
+*{
+    
+    overflow-x: hidden;
+}
+
+body{
+    scrollbar-width: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.alert{
+    
+    width: 600px;
+
+    left: calc(50% - 300px);
+    top: 30px;
+
+    margin: auto;
+    position: fixed;
+    z-index: 90;
+
+
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel{
+    z-index: -5;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.header .container {
+    margin-top: 70px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.container h1{
+    font-weight: bold;
+    margin-bottom: 100px;
+    font-size: 70px;
+}
+
+.container p{
+    font-size: 30px;
+}
+
+.container:nth-child(2){
+    align-items: center;
+    
+}
+
+.container button{
+    padding: 10px 20px;
+    outline: none;
+    background-color: #454545;
+    color: white;
+    border: none;
+}
+
+.container:nth-child(2) button:nth-child(2){
+    background-color: #4545453d;
+    border: 1px solid black;
+    margin-left: 50px;
+}
+
+/* Imagery */
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img1{
+    background-image: url("../assets/landing-carousel-1.png");
+}
+.img2{
+    background-image: url("../assets/landing-carousel-2.png");
+}
+.img3{
+    background-image: url("../assets/landing-carousel-3.png");
+}
+
+.salute{
+    width: 100%;
+    background-color: #454545;
+    color: white;
+    position: relative;
+}
+
+.salute .container{
+    margin-top: 50px;
+
+}
+
+/* Peoples */
+.salute .title{
+    text-align: center;
+}
+
+.salute .title h1{
+    margin-bottom: 50px;
+}
+.salute .title p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.people .image{
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.salute .people .text{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.salute .people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.salute .people .quote{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.salute .people .author{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.salute .people .description{
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+/* End of Imagery */
+
+/* Regis */
+
+.registration{
+    margin-top: 30px;
+}
+
+.registration .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.registration .title h1{
+    margin-bottom: 20px;
+}
+
+.registration .title p{
+    margin-bottom: 30px;
+}
+
+.registration form{
+    
+    background-color: #9c9c9c;
+
+    padding: 20px 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iName, .iEmail, .iNumber, .iEvent{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.registration form label{
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.registration form .iSubmit{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+
+.registration form .iSubmit button{
+    width: 100px;
+    
+}
+
+.sponsor{
+    background-color: #454545;
+}
+
+.sponsor .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.sponsor h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    
+}
+.sponsor .titles{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sponsor .container .sponsorlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.sponsorlogo img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.sponsor h6{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 575px){
+    * {
+        overflow-y: hidden;
+    }
+    nav{
+        height: 100%;
+    }
+    
+    .header{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .people{
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .people .image{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        
+    }
+
+    .people .text{
+        text-align: center;
+    }
+}

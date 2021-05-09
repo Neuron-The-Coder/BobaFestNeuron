@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Boba Fest</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/navcss.css">
+  <link rel="stylesheet" href="css/indexcss.css">
+
+</head>
+<body>
+  
+  <div class="notif">
+
+  </div>
+
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.svg" alt="" srcset="">
+      </a>
+  
+      <div class="navbar-text">
+        <span>BobaFest</span>
+      </div>
+  
+      <button class="navbar-toggler navcustom" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navi">
+          <i class="bi bi-grid"></i>
+        </span>
+      </button>
+  
+      <div class="collapse navbar-collapse goright" id="navbarSupportedContent">
+        <ul class="navbar-nav navlist ms-auto">
+          <li class="nav-item">
+            <a class="nav-link disabled current" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.html">Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="timeline.html">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="header">
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item img img1">
+          <!-- <img src="assets/landing-carousel-1.png" class="d-block w-100" alt="..."> -->
+        </div>
+        <div class="carousel-item img img2">
+          <!-- <img src="assets/landing-carousel-2.png" class="d-block w-100" alt="..."> -->
+        </div>
+        <div class="carousel-item active img img3">
+          <!-- <img src="assets/landing-carousel-3.png" class="d-block w-100" alt="..."> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <h1>Showcasing the Bubble of 
+            Technology</h1>
+          <p>In just a week, we will bring more than just a latest tech</p>
+          <p>Get your reservations and look at our timelines below!</p>          
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-12">
+            <button onclick="toRegister()">Register Now</button>
+            <a href="timeline.html"><button type="button btn-lg">Timelines</button></a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="salute">
+    <div class="container">
+
+      <div class="row title">
+        <h1>Greetings</h1>
+      </div>
+
+      <div class="people">
+        <div class="image">
+          <img src="assets/gusti.svg">
+        </div>
+        <div class="text">
+          <p class="quote" id="indo">Puji Tuhan yang Maha Esa karena kasihnya, event ini bisa berjalan. Teknologi di negara kita ini menjanjikan untuk diakui negara lain. Event ini bertujuan untuk tidak hanya membawa nama Indonesia ke luar, namun juga ke dalam pemikiran generasi muda kita untuk berinovasi. Semoga hal ini bisa menjadi sarana yang edukatif dan menyenangkan untuk kita semua. Salam Industri 4.0!
+          </p>
+          <p class="quote" id="eng">Glory to Allah for his love, this event can be seen around the world. Our tech promise us to be known by our bilterical friends. This not only spreading our country's name to the outside world, but also to be an inspiration to our future generations. May this be a fun yet educative week for us all. Viva 4.0 Industrial Revolution!</p>
+          <p class="author">Gusti A Gusti</p>
+          <p class="description">Manager, 1st at Bern Hackathon 2020</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="registration" id="registerhere">
+    <div class="container">
+      <div class="title">
+        <h1>Register Here</h1>
+        <p>Rewards and Knowledges for Free</p>
+      </div>
+
+      <form>
+        <!-- Email -->
+        <div class="iEmail">
+          <label for="" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Must be legit email" required>      
+        </div>
+
+        <!-- Name -->    
+        <div class="iName">
+          <label for="" class="form-label">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Required" required>
+        </div>    
+
+        <!-- Number -->
+        <div class="iNumber">
+          <label for="" class="form-label">Phone Number</label>
+          <input type="text" name="number" id="number" class="form-control" placeholder="Must starts with 08 | No more than 14 digits" required pattern="08.+" maxlength="14">
+        </div>
+
+        <!-- Event -->
+        <div class="iEvent">
+          <label for="" class="form-label">Events</label>
+          <select name="event" id="event" class="form-select">
+            <option value="1">Seminar ("No Data, No Revolution")</option>
+            <option value="2">Seminar ("IoT : Friendly Inanimate Business Partner")</option>
+            <option value="3">Google ("What do We Know About AI Mind Reader")</option>
+            <option value="4">Cisco ("From Diagram to Realgram")</option>
+            <option value="5">EXPO + Prototype Showcasing</option>
+          </select>
+        </div>
+
+  
+        <!-- Submit -->
+        <div class="iSubmit">
+          <button type="button" id="submitted">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="sponsor">
+    <div class="container">
+      <div class="row titles">
+        <h1>We are thanking our sponsors</h1>
+        <h3>For without them, this event will be not possible to be celebrated</h3>
+      </div>
+      <div class="row sponsorlogo">
+        <img src="assets/cisco.svg" alt="">
+        <img src="assets/google.svg" alt="">
+        <img src="assets/kemenkominfo.svg" alt="">
+        <img src="assets/kemenristek.svg" alt="">
+        <img src="assets/pandas.svg" alt="">
+      </div>
+      <div class="row credits">
+        <h6>Copyright &copy; by BobaFest IT Department. All rights reserved</h6>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="js/bootstrap.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/indexjs.js"></script>
+</body>
+</html>

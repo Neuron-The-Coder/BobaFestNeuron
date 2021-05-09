@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+  font-family: ubuntu;
+}
+
+nav{
+  overflow-y: hidden;
+  width: 100%;
+  height: 10vh;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgba(48, 48, 48);
+  color: white;
+}
+
+nav .nav-link, .navbar-brand{
+  text-decoration: none !important;
+  color: white;
+
+}
+
+.current{
+  background-color: white;
+  border-radius: 3px;
+}
+
+.disabled{
+  color: black !important;
+  font-weight: bold;
+}
+
+nav .navbar-brand img{
+  width: 40px;
+  height: 40px;
+}
+
+nav .navbar-text{
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+nav .navbar-toggler{
+  outline: none;
+  box-shadow: none;
+}
+
+nav .navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+nav .navbar-toggler span{
+  color: white;
+}
+
+nav .nav-item a:hover{
+  color: rgb(0, 141, 177);
+}
+
+nav .navbar-toggler {
+  padding: 10px 20px 10px 20px;
+}
+
+

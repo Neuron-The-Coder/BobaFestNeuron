@@ -1,0 +1,102 @@
+body{
+  background-color: #454545;
+}
+
+.container1 .title{
+  margin-bottom: 40px;
+  color: #fff;
+
+}
+
+.container1 .row{
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container1 .lists{
+  justify-content: space-around;
+}
+
+.mains{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lists{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.card{
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  padding-top: 30px;
+}
+
+.card img{
+  width: 200px;
+  height: 200px;
+  
+  
+}
+
+.contacts{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contacts .cl {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contacts .cl img{
+  width: 30px;
+  height: 30px;
+}
+
+.contacts .cl p{
+  margin-left: 30px;
+}
+
+@media (max-width: 1150px){
+  .lists{
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+
+    left: 50%;
+    margin-bottom: 0px;
+  }
+
+  .col{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  nav{
+      height: 100%;
+  }
+  
+  .header{
+      height: auto;
+  }
+}
