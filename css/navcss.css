@@ -31,14 +31,26 @@ nav .nav-link, .navbar-brand{
   font-weight: bold;
 }
 
+nav .navbar-brand{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px
+}
+
 nav .navbar-brand img{
   width: 40px;
   height: 40px;
+  margin-right: 10px;
 }
 
 nav .navbar-text{
   font-weight: bolder;
   font-size: 30px;
+}
+
+nav .navbar-brand:hover{
+  color: white;
 }
 
 nav .navbar-toggler{

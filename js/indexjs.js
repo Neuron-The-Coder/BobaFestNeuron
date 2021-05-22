@@ -37,30 +37,56 @@ $(".iSubmit #submitted").on('click', function(){
     "event" : event
   }
 
-  console.log(news);
+  var isok = 1
 
-  $.ajax({
-    url : "https://jsonplaceholder.typicode.com/posts",
-    method : "POST",
-    data: news,
-    success : (result) => {
-      let r = result.id;
+  if (/[\w]+@[\w]+\.[\w]+/.test(email) == false){
+    $("div.notif").html(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Wrong Email</strong> Email must be like this example <div style="font-style: italic;">helloW0rlD@gmail.com</div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>`);
+    return;
+  }
+  if (/[\w]+/.test(name) == false){
+    $("div.notif").html(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Name Error</strong> Name cannot be empty
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>`);
+    return;
+  }
+  if (/[\D]+/.test(number) || number.length > 14 || number.length == 0){
+    $("div.notif").html(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Phone Number Error</strong>
+    <p>Make sure it is no more than 14 digits and starts with 08</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>`);
+    return;
+  }
 
-      news.id = r;
-      console.log(news);
+  // Validation
 
-      let serial = ""
-      let aaa = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-      for (var i=0; i<20; i++){
-        serial += aaa[Math.floor(Math.random() * aaa.length) - 1];
+  if (isok == 1){
+    $.ajax({
+      url : "https://jsonplaceholder.typicode.com/posts",
+      method : "POST",
+      data: news,
+      success : (result) => {
+        let r = result.id;
+  
+        news.id = r;
+        console.log(news);
+  
+        let serial = ""
+        let aaa = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        for (var i=0; i<20; i++){
+          serial += aaa[Math.floor(Math.random() * aaa.length) - 1];
+        }
+  
+  
+        window.location.replace(`thankyou.html?id=${r}&serial=${serial}&email=${email}&phone=${number}`);
       }
+    })
+  }
 
-
-      window.location.replace(`thankyou.html?id=${r}&serial=${serial}&email=${email}&phone=${number}`);
-
-
-    }
-  })
 
 })
 

@@ -10,8 +10,10 @@
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="js/indexjs.js"></script>
 
+  <script defer src="js/qrcode.js"></script>
   <script defer src="js/particles.js"></script>
   <script defer src="js/thankyoujs.js"></script>
+  
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -25,11 +27,10 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="assets/logo.svg" alt="" srcset="">
+        <div class="navbar-text">
+          <span>BobaFest</span>
+        </div>
       </a>
-
-      <div class="navbar-text">
-        <span>BobaFest</span>
-      </div>
 
       <button class="navbar-toggler navcustom" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -103,8 +104,17 @@
             </div>
           </div>
 
+          <div class="row qrcode" id="qrcode">
+            <p>Or you can use this QR Code to register</p>
+          </div>
+
         </div>
+
+        
+
       </div>
+
+
 
     </div>
   </div>

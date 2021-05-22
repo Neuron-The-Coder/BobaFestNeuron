@@ -10,6 +10,8 @@
 }
 
 .container{
+  height: 100%;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +31,6 @@
 }
 
 .receipt{
-
   padding: 10px 30px;
   border: 1px solid black;
   background-color: #7a7a7a;
@@ -39,11 +40,16 @@
   font-weight: bolder;
   
 }
+.receipt .receipt-header h3{
+  font-weight: bolder;
+  font-size: 40px
+}
 
 .receipt .receipt-detail{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 
 }
 
@@ -58,13 +64,31 @@
 #particles-js{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200%;
   background-color: #454545;
   z-index: -5;
 }
 
 .ups{
   color: whitesmoke;
+}
+
+#qrcode{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#qrcode p{
+  font-size: 20px;
+}
+
+#qrcode img{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 575px){

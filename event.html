@@ -20,11 +20,10 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="assets/logo.svg" alt="" srcset="">
+        <div class="navbar-text">
+          <span>BobaFest</span>
+        </div>
       </a>
-
-      <div class="navbar-text">
-        <span>BobaFest</span>
-      </div>
 
       <button class="navbar-toggler navcustom" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -54,7 +53,7 @@
   </nav>
 
   <div class="events">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -109,12 +108,19 @@
       </button>
     </div>
   </div>
-
-  <div class="speakers">
-
+  <div class="downdesc">
+    <div class="container">
+      <div class="row" id="mobiletitle">
+        <h1>From Indonesia's Geniuses</h1>
+      </div>
+      <div class="row" id="mobiledesc">
+        <p>Eleven of most brilliant teams from chosen university will showcase their latest innovation to solve the real and concerning world problems</p>
+      </div>
+    </div>
   </div>
 
   <script src="js/bootstrap.js"></script>
-
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/eventjs.js"></script>
 </body>
 </html>
