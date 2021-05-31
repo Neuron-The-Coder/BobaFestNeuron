@@ -91,10 +91,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 575px){
-  * {
-      overflow-y: hidden;
-  }
+@media screen and (max-width: 630px){
   nav{
       height: 100%;
   }
@@ -102,5 +99,20 @@
   .header{
       height: auto;
   }
+
+  #qrcode img{
+    width: 120px;
+    height: 120px;
+  }
+
+  .receipt .receipt-header h3{
+    font-weight: bolder;
+    font-size: 30px
+  }
+
+  .container{
+    width: 80%;
+  }
+
 }
 
