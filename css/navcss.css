@@ -67,6 +67,21 @@ nav .navbar-toggler span{
   color: white;
 }
 
+nav .nav-item{
+  transition-duration: 500ms;
+
+}
+
+nav .nav-item:hover{
+  transform: translateY(-5px);
+  transition-duration: 500ms;
+
+}
+
+nav .current:hover{
+  transform: none !important;
+}
+
 nav .nav-item a:hover{
   color: rgb(0, 141, 177);
 }
